@@ -31,6 +31,6 @@ GitHub Desktop öffnen
 BlueGriffon öffnen
 <img src=https://user-images.githubusercontent.com/123729361/215080882-9d41e817-cc89-4177-b657-d5f8a7002f4b.png width=100% height=100%>|<img src=https://user-images.githubusercontent.com/123729361/215081295-ca03d490-5fd2-4d6e-a902-722cd3aa98d9.png width=100% height=100%>
 :-------------------------:|:-------------------------:
-*Extras -> Einstellungen|Quelle -> Serialisierung*
+*Extras -> Einstellungen*|*Quelle -> Serialisierung*
 
 Obige und Latin-1 Zeichen aus der Drop-Down-Liste wählen.
