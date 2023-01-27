@@ -24,14 +24,14 @@ GitHub Desktop unter https://desktop.github.com/ herunterladen, installieren und
 BlueGriffon (WYSIWYG-HTML-Editor) unter http://bluegriffon.org/#download herunterladen und installieren.
 
 GitHub Desktop öffnen
-<img src=https://user-images.githubusercontent.com/123729361/215080266-7d202fb0-933b-41cd-ac25-e0ad29327f97.png width=50% height=50%>
+<img src=https://user-images.githubusercontent.com/123729361/215080266-7d202fb0-933b-41cd-ac25-e0ad29327f97.png width=30% height=30%>
 *Clone a repository from the Internet* auswählen
-<img src=https://user-images.githubusercontent.com/123729361/215080683-10502917-afba-4c12-b5b3-37f122ca20f8.png width=50% height=50%>
+<img src=https://user-images.githubusercontent.com/123729361/215080683-10502917-afba-4c12-b5b3-37f122ca20f8.png width=30% height=30%>
 Entsprechendes Repository auswählen, Pfad angeben und Klonen
 
 BlueGriffon öffnen
-<img src=https://user-images.githubusercontent.com/123729361/215080882-9d41e817-cc89-4177-b657-d5f8a7002f4b.png width=50% height=50%>
+<img src=https://user-images.githubusercontent.com/123729361/215080882-9d41e817-cc89-4177-b657-d5f8a7002f4b.png width=30% height=30%>
 *Extras -> Einstellungen*
-<img src=https://user-images.githubusercontent.com/123729361/215081295-ca03d490-5fd2-4d6e-a902-722cd3aa98d9.png width=50% height=50%>
+<img src=https://user-images.githubusercontent.com/123729361/215081295-ca03d490-5fd2-4d6e-a902-722cd3aa98d9.png width=30% height=30%>
 *Quelle -> Serialisierung*
 Obige und Latin-1 Zeichen aus der Drop-Down-Liste wählen.
