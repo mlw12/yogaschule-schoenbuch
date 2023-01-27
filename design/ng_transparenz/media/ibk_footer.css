@@ -1,0 +1,23 @@
+#ibk_footer_div {
+	
+}
+
+#ibk_footer_div a {
+	float: left;
+	margin: 0px;
+	border: none !important;
+}
+
+#ibk_footer_div a img {
+	float: left;
+	border: none !important;
+}
+
+#ibk_footer_default {
+	display: none;
+}
+
+#footerContent {
+	text-align: center; 
+	margin-bottom: 5px;
+}

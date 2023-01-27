@@ -1,0 +1,76 @@
+/* Navigation - Aufbau und Farben */
+
+#ibk_nav_ul, #ibk_nav_ul li {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#ibk_nav_ul {
+	
+}
+
+#ibk_nav_ul li {
+	
+}
+
+
+#ibk_nav_ul a {
+	display: block;
+	color: #040f51;
+	text-decoration: none;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	font-weight: normal;
+	border: none;
+}
+
+#ibk_nav_ul li a:hover {
+	color: #4f1e38 !important;
+}
+
+
+#ibk_nav_ul li.ibk_nav_ebene1 {
+  padding-left: 10px;
+  font-size: 100%;
+}
+
+#ibk_nav_ul ul {
+	margin-left: 0px;
+}
+
+#ibk_nav_ul ul.ibk_nav_ebene2 {
+  padding-left: 10px;
+  font-size: 100%;
+}
+
+#ibk_nav_ul ul.ibk_nav_ebene3 {
+  padding-left: 15px;
+  font-size: 100%;
+}
+
+#ibk_nav_ul ul.ibk_nav_ebene4 {
+	padding-left: 20px;
+	font-size: 100%;
+}
+
+#ibk_nav_ul .ibk_ul_closed{
+	display: none;
+}
+
+#ibk_nav_ul .ibk_ul_open  {
+	
+}
+
+#ibk_nav_ul li.ibk_li_open>a{
+	color: #4f1e38;
+}
+
+#ibk_nav_ul a.ibk_nav_aktiv {
+	color: #4f1e38;
+}
+
+#ibk_nav_ul a.ibk_nav_inaktiv{
+	color: #040f51;
+}
+

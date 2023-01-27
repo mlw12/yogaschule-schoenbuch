@@ -1,0 +1,31 @@
+body, td, p, form, h1, h2, h3
+{
+	color: black;
+	font-family: "Times New Roman", Times, serif;
+	background-color : white;
+}
+
+/* Alle Bereiche bis auf Inhalt: Nicht mitdrucken */
+.no_print {display:none;} 
+.inhaltsfeld {display:none;} 
+
+/* für Links KEINE Farben angeben, da diese sonst in der Navigation vom MSIE übernommen werden -
+Farben für Links müssen über das body-Tag in HTML angegeben werden. */
+a:link			{
+	text-decoration: none;
+}
+
+a:visited		{
+	text-decoration: none;
+}
+
+.sitemap	{
+}
+
+h1				{font-size:15pt;}
+h2				{font-size:14pt;}
+h3				{font-size:12pt;}
+h4				{font-size:11pt;}
+
+/* Vorsicht!!! Stylesheet sollte immer im selben Verzeichnis wie dei aufrufende Seite stehen, da Netscape 4.x Bilder in Stylsheets anders Referenziert als der Explorer. (Netscape: Von der den Stylesheet aufrufenden Seite, Explorer: Vom Stylesheet aus)  */
+/* Netscape interpretiert bei mehreren style-Anweisungen in einem Tag immer nur die letzte */

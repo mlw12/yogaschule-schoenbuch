@@ -1,0 +1,222 @@
+body {
+	background-color: #FFFFFF;
+  color: #040f51;
+	font-family: 'Trebuchet MS', Helvetica, Jamrul, sans-serif;
+	margin: 0px;
+	text-align: left;
+	font-size: 13px;
+	background-image: url('bg_big.jpg'); 
+	background-position: 0px 0px;
+	background-attachment: fixed;
+}
+
+/* Standardseite Inhalt fuer Editor */
+
+.content {
+	font-size: 13px;
+	font-family: 'Trebuchet MS', Helvetica, Jamrul, sans-serif;
+	text-align: left;
+	background-color: #FFFFFF;
+	color: #040f51;
+	padding: 5px;
+	line-height: 140%;
+	width: 610px;
+	background-image: none; 
+}
+
+#ibk_master_wrapper {
+	width: 950px;
+	margin-left: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	position: relative;
+	
+}
+
+#ibk_master_container {
+	padding: 7px;
+	overflow: hidden;
+	text-align: left;
+	position: relative;
+	background-image: url('./ffffff_40.png'); 
+	text-align: center;
+	box-shadow: 0px 0px 10px #000000;
+}
+
+#ibk_head_container {
+	height: 220px;
+	background-image: url('./ibk_head.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: relative;
+	margin: auto; 
+	margin-bottom: 7px;
+	position: relative;
+}
+
+#ibk_main_container {
+	min-height: 450px;
+	background-image: url('./ffffff_50.png'); 
+	position: relative;
+	margin: auto; 
+	text-align: left;
+}
+
+#ibk_foot_container {
+	height: 20px;
+	text-align: center;
+	background-image: url('./ffffff_40.png'); ;
+	position: relative;
+	margin: 7px auto 0px auto;
+}
+
+#ibk_ibkfoot_container {
+	height: 40px;
+	text-align: center;
+	margin: auto; 
+	margin-bottom: 7px;
+	text-align: center;
+}
+
+#ibk_navi_main_container {
+	float: left;
+	width: 250px;
+	min-height: 300px;
+	position: relative;
+}
+
+#ibk_navi_container {
+	margin-left: 10px;
+	margin-right: 0px;
+	margin-top: 10px;
+	min-height: 200px;
+	background-image: url('./999999_40.png');
+	
+}
+
+#ibk_sub_nav_content {
+	margin-left: 10px;
+	margin-right: 0px;
+	margin-top: 20px;
+	min-height: 100px;
+}
+
+.ibk_ngl_box {
+	background-color: #AFB4BA;
+	min-height: 50px;
+}
+
+
+#ibk_content_container {
+	margin: 10px;
+	width: 665px;
+	float: right;
+	min-height: 430px;
+	border: 0px;
+	background-image: url('./ffffff_40.png');
+	line-height: 140%;
+}
+
+
+
+/* inner boxen*/
+
+
+#ibk_navi_box {
+	margin: 10px;
+	padding: 7px 0px;
+}
+
+#ibk_foot_box {
+	vertical-align: middle;
+	text-align: center;
+	position: relative; 
+}
+
+#ibk_foot_box span{
+	display: block;
+	margin-top: 2px;
+}
+
+
+#ibk_content_box {
+	margin: 10px;
+}
+
+
+.rundeecke5 {
+	-moz-border-radius: 5px; 
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+
+
+
+/* HTML-Elemente */
+
+h1, h2, h3  {
+	margin: 0px;
+	font-weight: bold;
+	padding: 4px;
+	padding-left: 0px;
+	font-family: 'Monotype Corsiva',cursive,'Comic Sans MS'; 
+}
+
+h1 {
+	font-size: 160%;
+	margin-bottom: 8px;
+}
+
+h2 {
+	font-size: 145%;
+	margin-bottom: 6px;
+}
+
+h3 {
+	font-size: 130%;
+	margin-bottom: 4px;
+}
+
+a {
+	color: #4f1e38;
+	font-style: italic;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a img, a:hover img {
+	text-decoration: none;
+}
+
+
+
+
+/* spezielle Tags */
+#ibk_head_box {
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+
+#ibk_headtext1, #ibk_headtext2 {
+	background-color: transparent !important;
+	position: relative;
+	color: #EDEDED;
+	text-shadow: 0.1em 0.1em 0.2em #000000;
+	font-family: 'Monotype Corsiva',cursive,'Comic Sans MS'; 
+}
+
+#ibk_headtext1 {
+	margin: 0px;
+	font-size: 50px;
+}
+
+#ibk_headtext2 {
+	text-align: left;
+	font-size: 20px;
+}

@@ -1,0 +1,28 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	line-height: 140%;
+	width: 100%;
+}
+
+h1 {
+	font-size: 100%;
+	margin-bottom: 10pt;
+}
+
+h2 {
+	font-size: 100%;
+	margin-top: 10pt;
+	margin-bottom: 10pt;
+}
+
+#sub_navi_container, #logo_container, #info_container, #spalte1, #print_box, #spalte4 {
+	display: none;
+}
+
+.bild_kasten {
+	width: 250px;
+	font-size: 80%;
+	float: right;
+	line-height: 110%;
+	margin: 10pt;
+}

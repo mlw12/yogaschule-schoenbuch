@@ -1,0 +1,56 @@
+html {
+	height: 100%;	
+}
+ 
+body {
+	background-image: none;
+	background-color: white;
+	color: black;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: none;
+	margin: 7px;
+	height: 100%;	
+}
+
+body * {
+	line-height: 130%;
+}
+
+.content {
+	background-image: none;
+	background-color: white;
+	color: black;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+td {
+	color: black;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a img {
+	border: 0px;
+}
+
+#mastertable {
+	border: none;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+.ibk_mtime {
+	display: none;
+}
+
+.ibk_counter {
+	display: none;
+}

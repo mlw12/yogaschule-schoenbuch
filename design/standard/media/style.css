@@ -1,0 +1,103 @@
+/* stylesheet for componeo websites */
+body {
+	color: black;
+	font-family: serif;
+	font-size: 14px;
+	background-color: white;
+	margin: 0px;
+	/* works on MSIE only - for NS, Gecko, Opera you must set marginwidth="0" marginheight="0" in the body tag of the html-file additionally*/
+}
+td { 
+	/* no inheritance of the font-size (and family, size in NS4) from body, so repeat it here */
+	color: black; /* ns4 */
+	font-family:  serif; /* ns4 */
+	font-size: 14px;
+}
+/* define headlines explicitly because the differences of default-headlines are too big between the main-browsers */
+h1 {
+	font-size: 145%;
+	font-weight: bold;
+}
+h2 {
+	font-size: 130%;
+	font-weight: bold;
+}
+h3 {
+	font-size: 115%;
+	font-weight: bold;
+}
+address {
+	font-size: 85%;
+	font-weight: normal;
+	font-style : normal;
+}
+li {
+	padding-bottom: 6px;
+}
+/* this class defines the bg-color for the content area and the wysiwyg-editor if not identically with the colors set in body */
+.content {
+}
+/* links */
+a:link			{
+	text-decoration: underline;	
+}
+a:visited		{
+	text-decoration: underline;
+}
+a:hover		{
+	text-decoration: underline;
+}
+a:active 		{
+	text-decoration: underline;
+}
+
+/* misc */
+.sitemap	{
+	background-color :;
+	border : 1px solid black;
+	padding: 3px
+}
+.hochgestellt {
+	font-size : 70%;
+	vertical-align:text-top;
+}
+.footer		{
+	/* text-decoration doesn´t work as class in gecko, so you have to specify this in the footer.html file */
+	font-size: 10px;
+	color: #999999;
+}
+
+/* positioning the navigation items in all 4 levels (any level below #3 will be set on level #3) */
+.nav0			{
+	font-size:13px;
+	margin-left:0px;	
+	padding-top:10px; /* distance between als level #0 headlines */ 
+}
+.nav1			{
+	font-size:12px;
+	margin-left:8px;
+}
+.nav2			{
+	font-size:11px;
+	margin-left:16px;
+}
+.nav3			{
+	font-size:10px;
+	margin-left:24px;
+}
+
+/*  colors etc. of the 3 navigation modes 
+text-decoration doesn´t work as class in gecko, so you have to specify this in the navigation.html file */
+.open			{
+	font-style : normal;
+	color : Black;
+}
+.closed	{
+	font-style : normal;
+	color : #999999;
+}
+.active		{
+	color : Black;
+	font-style : normal;
+}
+

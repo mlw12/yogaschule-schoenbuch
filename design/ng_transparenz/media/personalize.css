@@ -1,0 +1,514 @@
+/* 
+   personalize.css
+	 Steuerung verschiedener Layouts ausschliesslich ueber body-Klassen
+	 und nachfolgenden IDs  fuer die Design-Elemente, die verandert werden.
+   Zum Erstellen der Auswahlmenüs werden die Wertepaare in json Notation
+   als Kommentar erstellt.
+   wird als Klasse "standard" eingetragen ist das der Designstandard
+   une es wird kein Klassenname in den body eingetragen
+   Bsp:
+   json: {"GRUPPE": {"klasse1": "menuetext1", "klasse2": "menuetext2"}}
+   Hierbei bezeichnet:
+   GRUPPE: zugehöriges Auswahlmenü
+   klasse[.]: Name der entsprechendne Klasse als value des Menues
+   menuetext[.]: zugehoeriger Text im Auswahlmenue
+   besteht der Menuetext aus mehreren Werten, kann die json Array-Notation
+   verwendet werden
+	 Bsp:
+	 json: {"GRUPPE": {"klasse": ["text1","text2","text3","text4","text5"]}
+	 keine Sonderzeichen !!!!!!
+*/
+
+/* Standardwerte fuer BG, Head-Grafik und Groesse des Heads */
+
+/* json: {"STD_BODYBGIMG":  {"standard": "bg_big.jpg"}} */
+/* json: {"STD_HEADBGIMG":  {"standard": "ibk_head.jpg"}} */
+/* json: {"STD_HEADWIDTH":  {"standard": "900"}} */
+/* json: {"STD_HEADHEIGHT": {"standard": "220"}} */
+/* json: {"STD_HEAD1SIZE": {"standard": "50"}} */
+/* json: {"STD_HEAD2SIZE": {"standard": "20"}} */
+/* json: {"STD_BASEFONT": {"standard": "'Trebuchet MS', Helvetica, Jamrul, sans-serif"}} */
+
+/* json: {"AUSRICHTUNG": {"standard": "links", "dk_c": "mittig"}} */
+
+
+body.dk_l {
+	text-align: left;
+}
+
+body.dk_l #ibk_master_wrapper{
+	margin-left: 20px;
+	text-align: left;
+}
+
+
+body.dk_c {
+	text-align: center;
+}
+
+body.dk_c #ibk_master_wrapper{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+/* json:{"NAVIPOS": {"standard": "links", "dk_nr": "rechts"}} */
+
+body.dk_nr #ibk_navi_main_container{
+	float: right;
+}
+
+body.dk_nr #ibk_navi_container{
+	margin-left: 0px;
+	margin-right: 10px;
+	text-align: right;
+}
+
+body.dk_nr #ibk_sub_nav_content{
+	margin-left: 0px;
+	margin-right: 10px;
+}
+
+body.dk_nr #ibk_content_container {
+	float: left;
+}
+
+
+body.dk_nr #ibk_nav_ul li.ibk_nav_ebene1 {
+  padding-right: 10px;
+  padding-left: 0px;
+}
+
+body.dk_nr #ibk_nav_ul ul.ibk_nav_ebene2 {
+  padding-right: 10px;
+  padding-left: 0px;
+}
+
+body.dk_nr #ibk_nav_ul ul.ibk_nav_ebene3 {
+  padding-right: 15px;
+  padding-left: 0px;
+}
+
+body.dk_nr #ibk_nav_ul ul.ibk_nav_ebene4 {
+	padding-right: 20px;
+	padding-left: 0px;
+}
+
+/* json: {"BASEFONT":  {"standard": "Trebuchet MS", 
+												"dk_baseArial":   "Arial, Helvetica, sans-serif",
+												"dk_baseVerdana":   "Verdana, Geneva, sans-serif",
+												"dk_baseTahoma":   "Tahoma, Geneva, sans-serif",
+										 		"dk_baseTimes":   "Times New Roman, Times, serif",
+										 		"dk_baseCourier": "Courier New, Courier, monospace", 
+										 		"dk_baseComic":   "Comic Sans MS, cursive"
+										 		
+}} */
+
+body.dk_baseArial {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body.dk_baseVerdana {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+body.dk_baseTahoma {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+body.dk_baseTimes {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+body.dk_baseCourier {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+body.dk_baseComic {
+	font-family: 'Comic Sans MS', cursive;
+}
+
+body.dk_baseTrebuchet {
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+/* json:{"BREITE": {"dk_w800": "800px", 
+										"dk_w850": "850px", 
+										"dk_w900": "900px", 
+										"standard": "950px", 
+										"dk_w1000": "1000px"
+}} */
+
+body.dk_w800 #ibk_master_wrapper{
+	width: 800px;
+}
+
+body.dk_w800 #ibk_content_container{
+	width: 515px;
+}
+
+body.dk_w850 #ibk_master_wrapper{
+	width: 850px;
+}
+
+body.dk_w850 #ibk_content_container{
+	width: 565px;
+}
+
+body.dk_w900 #ibk_master_wrapper{
+	width: 900px;
+}
+
+body.dk_w900 #ibk_content_container{
+	width: 615px;
+}
+
+body.dk_w1000 #ibk_master_wrapper{
+	width: 1000px;
+}
+
+body.dk_w1000 #ibk_content_container{
+	width: 715px;
+}
+
+
+
+/* json: {"HEADHEIGHT": {"dk_hh100": "100px",
+												 "dk_hh120": "120px", 
+										 		 "dk_hh160": "160px",
+										 		 "dk_hh180": "180px", 
+										 		 "dk_hh200": "200px", 
+										 		 "standard": "220px",
+										 		 "dk_hh240": "240px", 
+										 		 "dk_hh260": "260px",
+												 "dk_hh280": "280px"
+}} */
+
+
+body.dk_hh100 #ibk_head_container {
+	height: 100px;
+}
+
+body.dk_hh120 #ibk_head_container {
+	height: 120px;
+}
+
+body.dk_hh140 #ibk_head_container {
+	height: 140px;
+}
+
+body.dk_hh160 #ibk_head_container {
+	height: 160px;
+}
+
+body.dk_hh180 #ibk_head_container {
+	height: 180px;
+}
+
+body.dk_hh200 #ibk_head_container {
+	height: 200px;
+}
+
+body.dk_hh220 #ibk_head_container {
+	height: 220px;
+}
+
+body.dk_hh240 #ibk_head_container {
+	height: 240px;
+}
+
+body.dk_hh260 #ibk_head_container {
+	height: 260px;
+}
+
+body.dk_hh280 #ibk_head_container {
+	height: 280px;
+}
+
+/* json: {"HEADCOLOR": {"dk_hc000": "schwarz", 
+										 		"dk_hcFFF": "weiss",
+										 		"standard": "hellgrau", 
+										 		"dk_hc666": "dunkelgrau",
+										 		"dk_hc253":	"dunkles blau"
+}} */
+
+body.dk_hcEDE #ibk_headtext1, body.dk_hcEDE #ibk_headtext2 {
+	color: #EDEDED;
+	text-shadow: 0.1em 0.1em 0.2em #000000;
+	/* filter: shadow(color:#000000, direction=135, strength=3); */
+}
+
+body.dk_hc253 #ibk_headtext1, body.dk_hc253 #ibk_headtext2 {
+	color: #color: #253386;;
+	text-shadow: 0.1em 0.1em 0.2em #000000;
+	/* filter: shadow(color:#000000, direction=135, strength=3); */
+}
+
+body.dk_hcFFF #ibk_headtext1, body.dk_hc000 #ibk_headtext2 {
+	color: #FFFFFF;
+	text-shadow: 0.1em 0.1em 0.2em #000000;
+	/* filter: shadow(color:#000000, direction=135, strength=3); */
+}
+
+body.dk_hc000 #ibk_headtext1, body.dk_hc000 #ibk_headtext2 {
+	color: #000000;
+	text-shadow: 0.1em 0.1em 0.2em #FFFFFF;
+	/* filter: shadow(color:#FFFFFF, direction=135, strength=3); */
+}
+
+body.dk_hc666 #ibk_headtext1, body.dk_hc666 #ibk_headtext2 {
+	color: #666666;
+	text-shadow: 0.1em 0.1em 0.2em #333333;
+	/* filter: shadow(color:#CCCCCC, direction=135, strength=3); */
+}
+
+/* json: {"HEADFONT":  {"standard": "Monotype Corsiva, cursive",
+												"dk_hfArial": 		"Arial, Helvetica, sans-serif", 
+										 		"dk_hfTimes":   "Times New Roman, Times, serif",
+										 		"dk_hfCourier": "Courier New, Courier, monospace", 
+										 		"dk_hfTrebuchet":   "Trebuchet MS, sans-serif",
+										 		"dk_hfComic":   "Comic Sans MS, cursive"
+}} */
+
+body.dk_hfArial #ibk_headtext1, body.dk_hfArial #ibk_headtext2 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body.dk_hfTimes #ibk_headtext1, body.dk_hfTimes #ibk_headtext2 {
+	font-family: 'Times New Roman', Times, serif;
+}
+
+body.dk_hfCourier #ibk_headtext1, body.dk_hfCourier #ibk_headtext2 {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+body.dk_hfComic #ibk_headtext1, body.dk_hfComic #ibk_headtext2 {
+	font-family: 'Comic Sans MS', cursive;
+}
+
+body.dk_hfTrebuchet #ibk_headtext1, body.dk_hfTrebuchet #ibk_headtext2 {
+	font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+/* json:{"HEADPOSITION": {"standard": "links oben", 
+													"dk_hlb": "links unten", 
+													"dk_hrt": "rechts oben", 
+													"dk_hrb": "rechts unten", 
+													"dk_hct": "mitte oben"
+													
+}} */
+
+body.dk_hlb #ibk_head_box{
+	position: absolute;
+	left: 0px;
+	bottom: 10px;
+	top: auto;
+}
+
+body.dk_hrt #ibk_head_box{
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	left: auto;
+}
+
+body.dk_hrb #ibk_head_box{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	left: auto;
+	bottom: auto;
+}
+
+body.dk_hct #ibk_head_box{
+	position: relative;
+	top: 5px;
+	text-align: center;
+}
+
+body.dk_hct #ibk_headtext1, body.dk_hct #ibk_headtext2 {
+	margin: auto;
+	text-align: center;
+}
+
+
+
+/* json:{"HEADIMGPOSITION": {"dk_hbgtl": "oben links", 
+														"standard": "oben mitte", 
+														"dk_hbgtr": "oben rechts", 
+														"dk_hbgbl": "unten links", 
+														"dk_hbgbc": "unten mitte", 
+														"dk_hbgbr": "unten rechts"
+}} */
+
+body.dk_hbgtl #ibk_head_container{
+	background-position: top left;
+}
+
+body.dk_hbgtc #ibk_head_container{
+	background-position: top center;
+}
+
+body.dk_hbgtr #ibk_head_container{
+	background-position: top right;
+}
+
+body.dk_hbgbl #ibk_head_container{
+	background-position: bottom left;
+}
+
+body.dk_hbgbc #ibk_head_container{
+	background-position: bottom center;
+}
+
+body.dk_hbgbr #ibk_head_container{
+	background-position: bottom right;
+}
+
+
+
+
+/* json: {"COLORWORLD": {"standard": ["lichtes Glas","#FFFFFF","#000000"],
+												 "dk_fw2": ["dunkles Glas","#999999","#FFFFFF"],
+												 "dk_fw3": ["blaues Glas","#4C4AFB","#F9F9FE","#000000"]
+}} */
+
+body.dk_fw2 {
+	color: #FFFFFF;
+}
+
+body.dk_fw2 #ibk_navi_container,
+body.dk_fw2 #ibk_content_container,
+body.dk_fw2 #ibk_foot_container,
+body.dk_fw2 #ibk_main_container,
+body.dk_fw2 #ibk_master_container {
+	background-image: url('./000000_70.png'); 
+}
+
+body.dk_fw2 a{
+	color: #bdc4c6;
+	border-color:  #bdc4c6;
+}
+
+body.dk_fw2 #ibk_nav_ul a,
+body.dk_fw2 #ibk_nav_ul a.ibk_nav_inaktiv{
+	color: #bdc4c6;
+}
+
+body.dk_fw2 #ibk_nav_ul li.ibk_li_open>a,
+body.dk_fw2 #ibk_nav_ul a.ibk_nav_aktiv,
+body.dk_fw2 #ibk_nav_ul li a:hover
+{
+	color: #FFFFFF !important;
+}
+
+
+
+body.dk_fw3 #ibk_content_container,
+body.dk_fw3 #ibk_foot_container,
+body.dk_fw3 #ibk_main_container {
+	background-image: url('./4C4AFB_03.png'); 
+}
+
+body.dk_fw3 #ibk_navi_container {
+	background-image: url('./4C4AFB_70.png'); 
+}
+
+body.dk_fw3 a {
+	color: #4C4AFB;
+	border-color:  #4C4AFB;
+}
+
+body.dk_fw3 #ibk_nav_ul a,
+body.dk_fw3 #ibk_nav_ul a.ibk_nav_inaktiv{
+	color: #C8C7FD;
+}
+
+body.dk_fw3 #ibk_nav_ul li.ibk_li_open > a,
+body.dk_fw3 #ibk_nav_ul a.ibk_nav_aktiv,
+body.dk_fw3 #ibk_nav_ul li a:hover
+{
+	color: #FFFFFF !important;
+}
+
+
+/* dk_fw2 START */
+
+.dk_fw2_content body {
+	background-color: #434547;
+	color: #FFFFFF;
+}
+
+.dk_fw2_content a {
+	color: #bdc4c6;
+	border-color:  #bdc4c6;
+}
+
+/* dk_fw2 ENDE */
+
+
+/* dk_fw3 START */
+
+.dk_fw3_content body {
+	background-color: #434547;
+	color: #FFFFFF;
+}
+
+.dk_fw3_content a {
+	color: #bdc4c6;
+	border-color:  #bdc4c6;
+}
+
+/* dk_fw2 ENDE */
+
+
+
+/* dk_baseComic START */
+
+.dk_baseComic_content body {
+	font-family: Comic Sans MS, cursive;
+}
+
+/* dk_baseComic ENDE */
+
+/* dk_baseCourier START */
+
+.dk_baseCourier_content body {
+	font-family: Courier New, Courier, monospace;
+}
+
+/* dk_baseCourier ENDE */
+
+/* dk_baseTimes START */
+
+.dk_baseTimes_content body {
+	font-family: Times New Roman, Times, serif;
+}
+
+/* dk_baseTimes ENDE */
+	
+/* dk_baseTahoma START */
+
+.dk_baseTahoma_content body {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+/* dk_baseTahoma ENDE */
+					 		
+/* dk_baseVerdana START */
+
+.dk_baseVerdana_content body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/* dk_baseVerdana ENDE */
+
+/* dk_baseArial START */
+
+.dk_baseArial_content body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* dk_baseArial ENDE */
